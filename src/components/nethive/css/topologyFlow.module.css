@@ -8,7 +8,7 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
   position: relative;
   /* Imagen de fondo */
-  background-image: url('${import.meta.env.BASE_URL}/image/global/plano.jpg');
+  background-image: url('/image/global/plano.jpg');
   background-size: 100% 100%; /* Estira la imagen para llenar completamente el contenedor */
   background-position: center;
   background-repeat: no-repeat;
@@ -22,7 +22,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('${import.meta.env.BASE_URL}/image/global/plano.jpg');
+  background-image: url('/image/global/plano.jpg');
   background-size: 100% 100%; /* Estira la imagen para llenar completamente el contenedor */
   background-position: center;
   background-repeat: no-repeat;
