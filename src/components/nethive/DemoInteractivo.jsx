@@ -202,7 +202,7 @@ const DemoInteractivo = () => {
           {/* Header */}
           <header className={styles.header}>
             <div className={styles.headerLeft}>
-              <img src="./image/isotipodemo/nethive.png" alt="NetHive" className={styles.logo} />
+              <img src={`${import.meta.env.BASE_URL}/image/isotipodemo/nethive.png`} alt="NetHive" className={styles.logo} />
               <h1 className={styles.title}>{textos.title}</h1>
               {selectedBranchData && (
                 <div className={styles.branchIndicator}>
@@ -219,7 +219,7 @@ const DemoInteractivo = () => {
                 </svg>
               </div>
               <div className={styles.userProfile}>
-                <img src="/icons/user.svg" alt="User" className={styles.userAvatar} />
+                <img src={`${import.meta.env.BASE_URL}/icons/user.svg`} alt="User" className={styles.userAvatar} />
               </div>
             </div>
           </header>

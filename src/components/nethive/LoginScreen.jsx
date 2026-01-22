@@ -78,7 +78,7 @@ const LoginScreen = ({ onLogin }) => {
         <div className={styles.formWrapper}>
           {/* Logo y título */}
           <div className={styles.headerSection}>
-            <img src="./image/isotipodemo/nethive.png" alt="NetHive" className={styles.logoSmall} />
+            <img src={`${import.meta.env.BASE_URL}/image/isotipodemo/nethive.png`} alt="NetHive" className={styles.logoSmall} />
             <div className={styles.titleSection}>
               <h1 className={styles.welcomeTitle}>
                 {textos.welcome} <span className={styles.brandName}>NetHive</span>
@@ -198,7 +198,7 @@ const LoginScreen = ({ onLogin }) => {
       <div className={styles.visualColumn}>
         <div className={styles.backgroundOverlay}>
           <div className={styles.logoContainer}>
-            <img src="./image/isotipodemo/nethive.png" alt="NetHive" className={styles.logoLarge} />
+            <img src={`${import.meta.env.BASE_URL}/image/isotipodemo/nethive.png`} alt="NetHive" className={styles.logoLarge} />
             <div className={styles.logoText}>
               <h2 className={styles.logoTitle}>NetHive</h2>
               <p className={styles.logoSubtitle}>Infrastructure Management</p>

@@ -34,7 +34,7 @@ const CompanyTableSection = ({ companies, onAddCompany, onEditCompany, onDeleteC
               alt={`${info.row.original.name} logo`}
               className={styles.companyLogo}
               onError={(e) => {
-                e.target.src = '/image/companies/equipment.png';
+                e.target.src = `${import.meta.env.BASE_URL}/image/companies/equipment.png`;
               }}
             />
           </div>
@@ -320,7 +320,7 @@ const CompanyTableSection = ({ companies, onAddCompany, onEditCompany, onDeleteC
                     src={company.logo} 
                     alt={`${company.name} logo`}
                     onError={(e) => {
-                      e.target.src = '/image/companies/equipment.png';
+                      e.target.src = `${import.meta.env.BASE_URL}/image/companies/equipment.png`;
                     }}
                   />
                 </div>

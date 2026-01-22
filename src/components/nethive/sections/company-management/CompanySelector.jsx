@@ -41,7 +41,7 @@ const CustomTooltip = ({ branch, show, position }) => {
           alt={branch.name}
           onError={(e) => {
             // Si la imagen no existe, usar una imagen placeholder
-            e.target.src = '/logo_nh_b.png';
+            e.target.src = `${import.meta.env.BASE_URL}/logo_nh_b.png`;
           }}
         />
       </div>
@@ -117,7 +117,7 @@ const CustomMarker = ({ branch, onHover, onLeave, onClick, mapRef }) => {
               src={branch.image} 
               alt={branch.name}
               onError={(e) => {
-                e.target.src = '/logo_nh_b.png';
+                e.target.src = `${import.meta.env.BASE_URL}/logo_nh_b.png`;
               }}
             />
           </div>
@@ -151,7 +151,7 @@ const companiesData = {
         city: "Ciudad de México", 
         employees: 250,
         address: "Av. Paseo de la Reforma 123, Col. Juárez, 06600 Ciudad de México, CDMX",
-        image: "../image/companies/e2.jpg"
+        image: `${import.meta.env.BASE_URL}/image/companies/e2.jpg`
       },
       { 
         id: 2, 
@@ -160,7 +160,7 @@ const companiesData = {
         city: "Monterrey", 
         employees: 120,
         address: "Av. Constitución 456, Centro, 64000 Monterrey, N.L.",
-        image: "../image/companies/e3.jpg"
+        image: `${import.meta.env.BASE_URL}/image/companies/e3.jpg`
       },
       { 
         id: 3, 
@@ -169,7 +169,7 @@ const companiesData = {
         city: "Guadalajara", 
         employees: 180,
         address: "Av. López Mateos 789, Providencia, 44630 Guadalajara, Jal.",
-        image: "../image/companies/e4.jpg"
+        image: `${import.meta.env.BASE_URL}/image/companies/e4.jpg`
       },
       { 
         id: 4, 
@@ -178,7 +178,7 @@ const companiesData = {
         city: "Tijuana", 
         employees: 95,
         address: "Blvd. Agua Caliente 321, Aviación, 22420 Tijuana, B.C.",
-        image: "../image/companies/e5.jpg"
+        image: `${import.meta.env.BASE_URL}/image/companies/e5.jpg`
       }
     ]
   },
@@ -194,7 +194,7 @@ const companiesData = {
         city: "Puebla", 
         employees: 450,
         address: "Carretera Federal México-Puebla Km 112, San Lorenzo Almecatla, 72830 Puebla, Pue.",
-        image: "../image/companies/e7.jpg"
+        image: `${import.meta.env.BASE_URL}/image/companies/e7.jpg`
       },
       { 
         id: 6, 
@@ -203,7 +203,7 @@ const companiesData = {
         city: "Mérida", 
         employees: 85,
         address: "Calle 60 Norte 234, Centro Histórico, 97000 Mérida, Yuc.",
-        image: "../image/companies/e8.jpg"
+        image: `${import.meta.env.BASE_URL}/image/companies/e8.jpg`
       },
       { 
         id: 7, 
@@ -212,7 +212,7 @@ const companiesData = {
         city: "Ciudad Juárez", 
         employees: 160,
         address: "Av. de las Américas 567, Partido Romero, 32030 Cd. Juárez, Chih.",
-        image: "../image/companies/e8.jpg"
+        image: `${import.meta.env.BASE_URL}/image/companies/e8.jpg`
       },
       { 
         id: 8, 
@@ -221,7 +221,7 @@ const companiesData = {
         city: "CDMX", 
         employees: 220,
         address: "Torre Corporativa, Polanco V Sección, 11560 Ciudad de México, CDMX",
-        image: "../image/companies/e3.jpg"
+        image: `${import.meta.env.BASE_URL}/image/companies/e3.jpg`
       }
     ]
   },
@@ -237,7 +237,7 @@ const companiesData = {
         city: "Ciudad de México", 
         employees: 380,
         address: "Av. Santa Fe 890, Santa Fe, 01219 Ciudad de México, CDMX",
-        image: "../image/companies/e1.jpg"
+        image: `${import.meta.env.BASE_URL}/image/companies/e1.jpg`
       },
       { 
         id: 10, 
@@ -246,7 +246,7 @@ const companiesData = {
         city: "Monterrey", 
         employees: 150,
         address: "Av. San Jerónimo 432, San Jerónimo, 64640 Monterrey, N.L.",
-        image: "../image/companies/e8.jpg"
+        image: `${import.meta.env.BASE_URL}/image/companies/e8.jpg`
       },
       { 
         id: 11, 
@@ -255,7 +255,7 @@ const companiesData = {
         city: "León", 
         employees: 90,
         address: "Blvd. López Mateos 654, Centro, 37000 León, Gto.",
-        image: "../image/companies/e7.jpg"
+        image: `${import.meta.env.BASE_URL}/image/companies/e7.jpg`
       },
       { 
         id: 12, 
@@ -264,7 +264,7 @@ const companiesData = {
         city: "Guadalajara", 
         employees: 45,
         address: "Av. Américas 876, Providencia, 44630 Guadalajara, Jal.",
-        image: "../image/companies/e6.jpg"
+        image: `${import.meta.env.BASE_URL}/image/companies/e6.jpg`
       }
     ]
   },
@@ -280,7 +280,7 @@ const companiesData = {
         city: "Toluca", 
         employees: 200,
         address: "Av. Solidaridad las Torres 543, Las Torres, 50140 Toluca, Méx.",
-        image: "../image/companies/e4.jpg"
+        image: `${import.meta.env.BASE_URL}/image/companies/e4.jpg`
       },
       { 
         id: 14, 
@@ -289,7 +289,7 @@ const companiesData = {
         city: "Monterrey", 
         employees: 75,
         address: "Av. Universidad 765, Del Valle, 66220 San Pedro Garza García, N.L.",
-        image: "../image/companies/e3.jpg"
+        image: `${import.meta.env.BASE_URL}/image/companies/e3.jpg`
       },
       { 
         id: 15, 
@@ -298,7 +298,7 @@ const companiesData = {
         city: "Acapulco", 
         employees: 60,
         address: "Costera Miguel Alemán 987, Fracc. Costa Azul, 39850 Acapulco, Gro.",
-        image: "../image/companies/e2.jpg"
+        image: `${import.meta.env.BASE_URL}/image/companies/e2.jpg`
       },
       { 
         id: 16, 
@@ -307,7 +307,7 @@ const companiesData = {
         city: "Guadalajara", 
         employees: 135,
         address: "Av. Patria 321, Jardines del Sol, 45050 Zapopan, Jal.",
-        image: "../image/companies/e1.jpg"
+        image: `${import.meta.env.BASE_URL}/image/companies/e1.jpg`
       }
     ]
   }
@@ -455,7 +455,7 @@ const CompanySelector = ({ onCompanySelect, onBranchSelect }) => {
       city: city.name,
       employees: Math.floor(Math.random() * 300) + 50,
       address: `Dirección ejemplo ${index + 1}, ${city.name}`,
-      image: '/image/companies/e1.png'
+      image: `${import.meta.env.BASE_URL}/image/companies/e1.png`
     }));
   };
 

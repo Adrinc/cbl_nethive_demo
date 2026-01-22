@@ -12,7 +12,7 @@ const AddBranchModal = ({ isOpen, onClose, onSaveBranch, editingBranch, companyN
     address: '',
     employees: '',
     position: [19.4326, -99.1332], // Ciudad de México por defecto
-    image: '/image/companies/equipment.png'
+    image: `${import.meta.env.BASE_URL}/image/companies/equipment.png`
   });
   const [preventClose, setPreventClose] = useState(false);
   const [errors, setErrors] = useState({});
@@ -89,7 +89,7 @@ const AddBranchModal = ({ isOpen, onClose, onSaveBranch, editingBranch, companyN
           address: '',
           employees: '',
           position: [19.4326, -99.1332],
-          image: '/image/companies/equipment.png'
+          image: `${import.meta.env.BASE_URL}/image/companies/equipment.png`
         });
       }
       setErrors({});
@@ -111,7 +111,7 @@ const AddBranchModal = ({ isOpen, onClose, onSaveBranch, editingBranch, companyN
       address: '',
       employees: '',
       position: [19.4326, -99.1332],
-      image: '/image/companies/equipment.png'
+      image: `${import.meta.env.BASE_URL}/image/companies/equipment.png`
     });
     setErrors({});
   };

@@ -14,7 +14,7 @@ const { title } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="description" content="NetHive - Demo Interactiva" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
+		<link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}/favicon.png`} />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 		
@@ -32,37 +32,37 @@ const { title } = Astro.props;
 	@font-face {
 		font-family: 'Inter';
 		src: 
-			url('/fonts/Inter.ttf') format('ttf'),
-			url('/fonts/InterVariable.ttf') format('ttf'),
-			url('/fonts/InterVariable.woff2') format('woff2');
+			url('${import.meta.env.BASE_URL}/fonts/Inter.ttf') format('ttf'),
+			url('${import.meta.env.BASE_URL}/fonts/InterVariable.ttf') format('ttf'),
+			url('${import.meta.env.BASE_URL}/fonts/InterVariable.woff2') format('woff2');
 		font-display: swap;
 	}
 	
 	@font-face {
 		font-family: 'OpenSans';
 		src: 
-			url('/fonts/OpenSans.ttf') format('ttf'),
-			url('/fonts/OpenSansRegular.ttf') format('ttf'),
-			url('/fonts/OpenSansRegular.woff') format('woff'),
-			url('/fonts/OpenSansRegular.woff2') format('woff2');
+			url('${import.meta.env.BASE_URL}/fonts/OpenSans.ttf') format('ttf'),
+			url('${import.meta.env.BASE_URL}/fonts/OpenSansRegular.ttf') format('ttf'),
+			url('${import.meta.env.BASE_URL}/fonts/OpenSansRegular.woff') format('woff'),
+			url('${import.meta.env.BASE_URL}/fonts/OpenSansRegular.woff2') format('woff2');
 		font-display: swap;
 	}
 	
 	@font-face {
 		font-family: 'Catamaran';
 		src: 
-			url('/fonts/Catamaran.ttf') format('ttf'),
-			url('/fonts/CatamaranRegular.woff') format('woff'),
-			url('/fonts/CatamaranRegular.woff2') format('woff2');
+			url('${import.meta.env.BASE_URL}/fonts/Catamaran.ttf') format('ttf'),
+			url('${import.meta.env.BASE_URL}/fonts/CatamaranRegular.woff') format('woff'),
+			url('${import.meta.env.BASE_URL}/fonts/CatamaranRegular.woff2') format('woff2');
 		font-display: swap;
 	}
 	
 	@font-face {
 		font-family: 'OldPress';
 		src: 
-			url('/fonts/OldPress.ttf') format('ttf'),
-			url('/fonts/OldPress.woff') format('woff'),
-			url('/fonts/OldPress.woff2') format('woff2');
+			url('${import.meta.env.BASE_URL}/fonts/OldPress.ttf') format('ttf'),
+			url('${import.meta.env.BASE_URL}/fonts/OldPress.woff') format('woff'),
+			url('${import.meta.env.BASE_URL}/fonts/OldPress.woff2') format('woff2');
 		font-display: swap;
 	}
 	
